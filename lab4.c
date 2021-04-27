@@ -83,7 +83,6 @@ int main(int argc, char *argv[]) {
   for (i = 0; i < NTHREADS; i++) {
     pthread_join(threads[i], NULL);
   }
-  printf ("\nFIM\n");
 
   /* Desaloca variaveis e termina */
   pthread_mutex_destroy(&x_mutex);
